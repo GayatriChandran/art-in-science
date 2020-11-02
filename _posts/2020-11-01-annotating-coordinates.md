@@ -7,7 +7,9 @@ In this post, we will learn how to annotate objects in an image, given their coo
 
 ### Import libraries
 
-
-
-
+```python     
+import glob
+import matplotlib.pyplot as plt
+import pandas as pd
+```  
 
