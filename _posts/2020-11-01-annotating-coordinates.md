@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Simple 'bounding boxes'
-excerpt_separator: <!--more-->
-meta-description: This post describes a simple python code to mark and annotate similar objects in an image, given their coordinates (in pixels).
+# excerpt_separator: <!--more-->
+meta-description: This post describes a simple python code to mark and annotate similar objects in an image, given their coordinates (in pixels).  
 ---
 
 I deal a lot with microscopy images that contain tiny biological structures, seen as diffraction-limited spots. Sometimes, it's useful to label these structures as '1', '2', '3', ... etc (or add descriptors like 'good' / 'bad') to tell them apart post-analysis.  
