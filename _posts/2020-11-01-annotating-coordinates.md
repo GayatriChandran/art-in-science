@@ -20,7 +20,7 @@ if (__name__ == "__main__"):
     file = 'test.png'
     im = plt.imread(file)
 ```
-[Spots on black background](assets/img/test_image.png "An example image")
+[Spots on black background](/assets/img/test_image.png "An example image")
 
 ### Load coordinates of objects in image  
 ```python
