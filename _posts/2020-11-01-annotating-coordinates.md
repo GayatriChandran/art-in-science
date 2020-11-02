@@ -12,16 +12,22 @@ import pandas as pd
 import numpy
 import matplotlib.pyplot as plt
 ```  
-###  Overlay scatter plot on image
+###  Load image
 ```python  
 if (__name__ == "__main__"):
 
     # Load the image
     file = 'test.png'
     im = plt.imread(file)
+```
+[alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
+### Load coordinates of objects in image  
+```python
     # Load the set of coordinates [object locations] 
     df = pd.read_csv('test.csv')
+```
+
 
     # Overlay a scatter plot over the image, with numbering
     fig, ax = plt.subplots()
