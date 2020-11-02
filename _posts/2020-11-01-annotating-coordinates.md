@@ -3,9 +3,9 @@ layout: post
 title: A simple substitute for bounding boxes
 ---
 
-In this post, we'll see how to annotate simple objects in an image, given their coordinates. Most of the time, I deal with pictures of diffraction limited spots (like the one below), and I'm constantly trying to keep track of which 'spot' is which. Here is a snippet of code that I find useful for quick documentation. 
+In this post, we'll see how to annotate simple objects in an image using python, given their coordinates. Most of the time, I deal with pictures of diffraction limited spots (like the one below), and I'm constantly trying to keep track of which 'spot' is which. Here's a snippet of python code that I find useful for quick documentation. 
 
-### Import libraries
+### Import python libraries
 
 ```python     
 import pandas as pd
