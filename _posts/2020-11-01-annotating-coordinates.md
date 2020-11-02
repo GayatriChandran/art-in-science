@@ -59,3 +59,6 @@ plt.savefig('test_marked.png', bbox_inches = 'tight', pad_inches = 0)
 </p>
 
 Modify `xytext` to change the position of text. You can also use `glob` to iterate through multiple similar images in a directory.
+
+### References  
+[https://stackoverflow.com/questions/...](https://stackoverflow.com/questions/5073386/how-do-you-directly-overlay-a-scatter-plot-on-top-of-a-jpg-image-in-matplotlib)
