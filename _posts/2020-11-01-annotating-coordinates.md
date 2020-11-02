@@ -1,9 +1,17 @@
 ---
 layout: post
-title: A simple substitute for bounding boxes
+title: Simple 'bounding boxes'
+excerpt_separator: <!--more-->
+meta-description: This post describes a simple python code to mark and annotate similar objects in an image, given their coordinates (in pixels).
 ---
 
-In this post, we'll see how to annotate simple objects in an image using python, given their coordinates. Most of the time, I deal with pictures of diffraction limited spots (like the one below), and I'm constantly trying to keep track of which 'spot' is which. Here's a snippet of python code that I find useful for quick documentation. 
+I deal a lot with microscopy images that contain tiny biological structures, seen as diffraction-limited spots. Sometimes, it's useful to label these structures as '1', '2', '3', ... etc (or add descriptors like 'good' / 'bad') to tell them apart post-analysis.  
+I wanted to mark the spots and annotate them, and batch process several images in a folder, but couldn't find a straight-forward python implementation (I didn't want to use OpenCV). After some googling and tweaking of code, I settled with this workaround. With `matplotlib`, an image can be overlayed with a scatter plot. And scatter plots are highly customizable.  
+Here's my python implementation for marking and annotating similar objects in an image, given their coordinates (in pixels).
+
+<p align="center">
+  <img width="300" height="300" src="https://gayatrichandran.github.io/art-in-science/images/test_image.png">
+</p>
 
 ### Import python libraries
 
@@ -17,14 +25,9 @@ import matplotlib.pyplot as plt
 file = 'test.png'
 img = plt.imread(file)
 ```
-<!-- ![Spots on black background](assets/img/test_image.png "An example image"){:class="img-responsive"} -->
-
-<p align="center">
-  <img width="300" height="300" src="https://gayatrichandran.github.io/art-in-science/images/test_image.png">
-</p>
 
 ### Load coordinates  
-I already have the centroid pixel coordinates saved in csv format. Here, it's being loaded into a pandas dataframe.
+The centroid pixel coordinates for these diffraction-limited peaks were obtained from a peak-finding algorithm, and saved in `.csv` format. Here, it's being loaded into a pandas dataframe. 
 ```python
 # Load the set of coordinates [object locations] 
 df = pd.read_csv('test.csv')
@@ -38,10 +41,10 @@ df = pd.read_csv('test.csv')
 |   3   |  152  |  130  |
 
 ## Overlay scatter plot  
-I kept searching online for 'bounding boxes' and how to draw rectangles using `pillow`, but this is a quick work-around. With `matplotlib` you can easily overlay a custom scatter plot on top of an image.
+I kept searching online for 'bounding boxes' and how to draw rectangles using `pillow`, but this is simpler. With `matplotlib` you can just overlay a custom scatter plot on top of an image.
 
 ```python
-# Overlay a scatter plot on the image, with numbering
+# Overlay scatter plot on the image, with numbering
 fig, ax = plt.subplots()
 plt.imshow(img, cmap='gray')
 plt.scatter(df['x'],df['y'], marker="s", s=150, facecolors='none',
@@ -58,7 +61,7 @@ plt.savefig('test_marked.png', bbox_inches = 'tight', pad_inches = 0)
   <img width="300" height="300" src="https://gayatrichandran.github.io/art-in-science/images/test_annotated.png">
 </p>
 
-Modify `xytext` to change the position of text. You can also use `glob` to iterate through multiple similar images in a directory.
+Modify `xytext` to change the position of text and `s` to change the size of these markers. You can also use `glob` to iterate through multiple similar images in a directory.
 
 ### References  
 [https://stackoverflow.com/questions/...](https://stackoverflow.com/questions/5073386/how-do-you-directly-overlay-a-scatter-plot-on-top-of-a-jpg-image-in-matplotlib)
