@@ -26,9 +26,11 @@ if (__name__ == "__main__"):
     # Overlay a scatter plot over the image, with numbering
     fig, ax = plt.subplots()
     implot = plt.imshow(im, cmap='gray')
-    plt.scatter(df['x'],df['y'], marker="s", s=150, facecolors='none', edgecolors='white')
+    plt.scatter(df['x'],df['y'], marker="s", s=150, facecolors='none',
+                edgecolors='white')
     for i, txt in enumerate(df['index']):
-        ax.annotate(txt+1, (df['x'][i], df['y'][i]), color='white', size=8, xytext=(2, 7), textcoords='offset points')
+        ax.annotate(txt+1, (df['x'][i], df['y'][i]), color='white', 
+                    size=8, xytext=(2, 7), textcoords='offset points')
     plt.axis('off')
 
     # Save the figure
