@@ -20,7 +20,7 @@ if (__name__ == "__main__"):
     file = 'test.png'
     im = plt.imread(file)
 ```
-[alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+[Spots on black background](assets/img/test_image.png "An example image")
 
 ### Load coordinates of objects in image  
 ```python
