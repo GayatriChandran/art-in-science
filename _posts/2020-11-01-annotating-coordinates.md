@@ -20,15 +20,26 @@ if (__name__ == "__main__"):
     file = 'test.png'
     im = plt.imread(file)
 ```
-![Spots on black background](/assets/img/test_image.png "An example image"){:class="img-responsive"}
+<!-- ![Spots on black background](assets/img/test_image.png "An example image"){:class="img-responsive"} -->
 
-### Load coordinates of objects in image  
+<p align="center">
+  <img width="300" height="300" src="/art-in-science/images/test_image.png">
+</p>
+
+### Load coordinates
 ```python
     # Load the set of coordinates [object locations] 
     df = pd.read_csv('test.csv')
 ```
 
+| Index |   x   |   y   |
+| :---: | :---: | :---: |
+|   0   |  34   |  76   |
+|   1   |  84   |  94   |
+|   2   |  116  |  124  |
+|   3   |  152  |  130  |
 
+```python
     # Overlay a scatter plot over the image, with numbering
     fig, ax = plt.subplots()
     implot = plt.imshow(im, cmap='gray')
