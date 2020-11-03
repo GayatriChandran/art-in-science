@@ -3,7 +3,7 @@ title:               Art in Science
 tagline:             'Blog'
 description:         'My personal blog. Code snippets, technical notes and literature.'
 baseurl:             '/art-in-science'
-url:                 https://gayatrichandran.github.io/
+url:                 https://gayatrichandran.github.io
 paginate:            5
 permalink:           pretty
 
