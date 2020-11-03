@@ -3,27 +3,21 @@ layout: page
 title: About
 ---
 
-<p class="message">
+<!-- <p class="message">
   Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+</p> -->
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Hi there ! I'm Gayatri, and this is my personal website.
 
-There are currently two themes built on Poole:
+### Education
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+* Bachelor of Technology (B.Tech)
+  Applied Electronics and Instrumentation Engineering
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+### Career
 
-## Setup
+* Research Fellow at Tata Institute of Fundamental Research
+  My work involves developing techniques in super-resolution microscopy and using it as a tool to investigate questions in neuro-biology.
 
-Some fun facts about the setup of this project include:
+### Software Development
 
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
