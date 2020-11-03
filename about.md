@@ -11,7 +11,7 @@ Hi there ! I'm Gayatri, and this is my personal website.
 
 ### Education
 
-* Bachelor of Technology (B.Tech) 
+* Bachelor of Technology (B.Tech)  
   
   Applied Electronics and Instrumentation Engineering
 
