@@ -5,8 +5,8 @@ title: Simple 'bounding boxes'
 meta-description: This post describes a simple python code to mark and annotate similar objects in an image, given their coordinates (in pixels).  
 ---
 
-I deal a lot with microscopy images that contain tiny biological structures, seen as diffraction-limited spots. Sometimes, it's useful to label these structures as '1', '2', '3', ... etc (or add descriptors like 'good' / 'bad') to tell them apart post-analysis.  
-I wanted to mark the spots and annotate them, and batch process several images in a folder, but couldn't find a straight-forward python implementation (I didn't want to use OpenCV). After some googling and tweaking of code, I settled with this workaround. With `matplotlib`, an image can be overlayed with a scatter plot. And scatter plots are highly customizable.  
+A lot of my work involves analyzing microscopy images that contain tiny biological structures, seen as diffraction-limited spots. Sometimes, it's useful to label these structures as '1', '2', '3', ... etc (or add descriptors like 'in-focus' / 'out-of-focus') to tell them apart post-analysis.  
+I wanted to mark these spots and annotate them, and batch process several images in a folder, but couldn't find a straight-forward python implementation (I didn't want to use OpenCV). After some googling and tweaking of code, I settled with this workaround. With `matplotlib`, an image can be overlayed with a scatter plot. And scatter plots are highly customizable.  
 Here's my python implementation for marking and annotating similar objects in an image, given their coordinates (in pixels).
 
 <p align="center">
@@ -61,7 +61,7 @@ plt.savefig('test_marked.png', bbox_inches = 'tight', pad_inches = 0)
   <img width="300" height="300" src="https://gayatrichandran.github.io/art-in-science/images/test_annotated.png">
 </p>
 
-Modify `xytext` to change the position of text and `s` to change the size of these markers. You can also use `glob` to iterate through multiple similar images in a directory.
+Modify `xytext` to change the position of text and `s` to change the size of these markers. I also use `glob` to iterate through multiple similar images in a directory.
 
 ### References  
 [https://stackoverflow.com/questions/...](https://stackoverflow.com/questions/5073386/how-do-you-directly-overlay-a-scatter-plot-on-top-of-a-jpg-image-in-matplotlib)
