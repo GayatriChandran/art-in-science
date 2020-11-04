@@ -3,11 +3,11 @@ layout: page
 title: About
 ---
 
-<!-- <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p> -->
+<p>
+  <img width="150" align="right" src="/art-in-science/images/portrait.jpg">
+</p>
 
-Hi there ! I'm Gayatri, and this is my personal website.
+Hi there ! I'm Gayatri, and this is my personal website. 
 
 ### Education
 
