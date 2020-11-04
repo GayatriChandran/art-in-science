@@ -4,7 +4,7 @@ title: About
 ---
 
 <p>
-  <img width="150" align="right" src="/art-in-science/images/portrait.jpg">
+  <img width="120" align="right" src="/art-in-science/images/portrait.jpg">
 </p>
 
 Hi there ! I'm Gayatri, and this is my personal website. 
