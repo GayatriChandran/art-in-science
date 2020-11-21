@@ -4,7 +4,7 @@ title: About
 ---
 
 <p>
-  <img width="120" align="right" src="/art-in-science/images/portrait.jpg">
+  <img width="250" align="right" src="/art-in-science/images/me.jpg">
 </p>
 
 Hi there ! I'm Gayatri, and this is my personal website. 
@@ -18,4 +18,4 @@ Hi there ! I'm Gayatri, and this is my personal website.
 ### Career
 
 * Research Fellow at Tata Institute of Fundamental Research, Hyderabad (2018-present)  
-  My work involves developing techniques in super-resolution microscopy and using it as a tool to investigate questions in neuro-biology.
+  I work on super-resolution microscopy imaging and analysis to investigate questions in neuro-biology. 
